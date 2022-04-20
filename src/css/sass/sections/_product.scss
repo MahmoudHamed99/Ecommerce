@@ -1,0 +1,86 @@
+// Start Product
+.product-details {
+    padding-top: 150px;
+    padding-bottom: $padd-bottom;
+    .details-cont {
+        display: flex;
+        justify-content: space-between;
+        .product-img {
+            flex-basis: 35%;
+            > img {
+                width: 100%;
+                height: 400px;
+                margin-bottom: 20px;
+                border: 1px solid $p-color;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    flex-basis: 24%;
+                    border: 1px solid $p-color;
+                    border-radius: 4px;
+                    @extend %center;
+                    cursor: pointer;
+                    &.active {
+                        border: 2px solid $main-color;
+                    }
+                    img {
+                        width: 100%;
+                        height: 80%;
+                    }
+                }
+            }
+        }
+        .details {
+            flex-basis: 60%;
+            h5 {
+                margin: 20px 0 40px;
+                color: $h-color;
+            }
+            h2 {
+                margin-bottom: 30px;
+                color: $h-color;
+            }
+            span {
+                display: block;
+                margin-bottom: 15px;
+                color: black;
+                font: {
+                    size: 26px;
+                    weight: bold;
+                }
+            }
+            select {
+                display: block;
+                padding: 10px 5px;
+            }
+            input {
+                width: 60px;
+                padding: 8px 0 8px 5px;
+                margin: 15px 0 40px;
+            }
+            button {
+                display: inline-block;
+                margin-left: 10px;
+                padding: 10px 20px;
+                background-color: $main-color;
+                color: $light;
+                font-weight: 600;
+                border-radius: 3px;
+            }
+            h3 {
+                margin: 0 0 15px;
+                color: $h-color;
+            }
+            p {
+                margin: 0;
+                color: $p-color;
+                line-height: 1.7;
+            }
+        }
+    }
+}
+// End Product

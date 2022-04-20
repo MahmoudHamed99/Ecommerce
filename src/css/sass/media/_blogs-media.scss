@@ -1,0 +1,47 @@
+// Start Blogs-Media
+@include media("tablet") {
+    .blogs {
+        .container {
+            .blogs-cont {
+                gap: 140px;
+                .blog {
+                    flex-direction: column;
+                    .blog-img {
+                        width: 100%;
+                        margin-bottom: 30px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .blog-info {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media("mobile") {
+    .blogs {
+        .container {
+            .blogs-cont {
+                .blog-info {
+                    width: 100%;
+                    h3 {
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 15px;
+                        line-height: 1.6;
+                    }
+                    a {
+                        font: {
+                            size: 13px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Blogs-Media

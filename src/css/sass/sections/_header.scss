@@ -1,0 +1,43 @@
+// Start Page-Header
+.page-head {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding-top: 78px;
+    height: 60vh;
+    text-align: center;
+    @extend %center;
+    &::before {
+        content: "";
+        @extend %overlay;
+        background-color: rgba($color: #000, $alpha: 0.6);
+    }
+    &.about-head {
+        background-image: url("../images/about-head.jpg");
+    }
+    &.blog-head {
+        background-image: url("../images/blog-head.png");
+    }
+    &.shop-head {
+        background-image: url("../images/shop-head.png");
+    }
+    &.contact-head {
+        background-image: url("../images/contact-head.jpg");
+    }
+    &.cart-head {
+        background-image: url("../images/cart-head.jpg");
+    }
+    .intro {
+        position: relative;
+        z-index: 2;
+        h1 {
+            margin: 0 0 20px;
+            color: $light;
+        }
+        p {
+            margin: 0;
+            color: $light;
+        }    
+    }
+}
+// End Page-Header

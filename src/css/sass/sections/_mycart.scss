@@ -1,0 +1,48 @@
+// Start My-Cart
+.my-cart {
+    @extend %sec-padd;
+    margin: auto;
+    overflow-x: auto;
+    table {
+        width: 1170px;
+        text-align: center;
+        border-collapse: collapse;
+        thead {
+            border-top: 1px solid #E2E9E1;
+            border-bottom: 1px solid #E2E9E1;
+            tr {
+                th {
+                    padding: 15px 0;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    padding: 20px 0;
+                    i {
+                        transition: $main-trans;
+                        cursor: pointer;
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                    img {
+                        width: 70px;
+                        height: 70px;
+                    }
+                    span {
+                        color: $p-color;
+                    }
+                    input {
+                        display: inline-block;
+                        width: 60px;
+                        padding: 5px 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+// End My-Cart

@@ -1,0 +1,15 @@
+//- Start Sections-Header
+mixin section-head(title)
+    .section-head
+        h2= title
+        p Summer Collection New Modern Design
+//- End Sections-Header
+
+//- Start Page-Header
+mixin page-head(head, text, classN)
+    section(class=classN).page-head
+        .container
+            .intro
+                h1= head
+                p= text
+//- End Page-Header

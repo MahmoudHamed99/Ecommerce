@@ -1,0 +1,25 @@
+// Start Sletter-Media
+@include media("tablet") {
+    .sletter {
+        .sletter-cont {
+            flex-direction: column;
+            text-align: center;
+            .text {
+                h3 {
+                    margin: 0 0 30px;
+                }
+                p {
+                    margin: 0 0 25px;
+                    line-height: 1.7;
+                }
+            }
+            form {
+                input {
+                    padding: 10px 15px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+// End Sletter-Media

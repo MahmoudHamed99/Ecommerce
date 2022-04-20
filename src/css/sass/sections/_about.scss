@@ -1,0 +1,36 @@
+// Start About-Us
+.about-us {
+    @extend %sec-padd;
+    .about-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .about-img {
+            flex-basis: 47%;
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        .about-info {
+            flex-basis: 50%;
+            h2 {
+                margin: 0;
+                color: $h-color;
+                font-size: 30px;
+            }
+            p {
+                margin: 15px 0;
+                color: $p-color;
+                line-height: 1.6;
+            }
+            abbr {
+                display: block;
+                margin-bottom: 15px;
+                color: $p-color;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+// End About-Us

@@ -1,0 +1,101 @@
+// Start Banners
+.banners {
+    padding-bottom: $padd-bottom;
+    .big-banners {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 30px;
+        @include media("tablet") {
+            flex-direction: column;
+        }
+        .big-banner {
+            width: 50%;
+            position: relative;
+            height: 45vh;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            @include media("tablet") {
+                width: 100%;
+            }
+            .content {
+                z-index: 2;
+                span {
+                    display: block;
+                    color: $light;
+                }
+                h3 {
+                    margin: 15px 0;
+                    color: $light;
+                }
+                p {
+                    margin: 0 0 15px;
+                    color: $light;
+                }
+                button {
+                    margin-left: 0;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    color: white;
+                    &:hover {
+                        background-color: $main-color;
+                        border-color: $main-color;
+                    }
+                }
+            }
+            &:nth-of-type(1) {
+                background-image: url("../images/banner1.jpg");
+            }
+            &:nth-of-type(2) {
+                background-image: url("../images/banner2.jpg");
+            }
+            &::before {
+                content: "";
+                @extend %overlay;
+                background-color: rgba($color: #000, $alpha: 0.1);
+            }
+        }
+    }
+    .sm-banners {
+        @include grid-div(300px, 30px);
+        .sm-banner {
+            position: relative;
+            height: 35vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            .content {
+                z-index: 2;
+                h3 {
+                    margin: 0 0 20px;
+                    color: $light;
+                }
+                p {
+                    margin: 0;
+                    color: #df3030;
+                    font-weight: 600;
+                }    
+            }
+            &:nth-of-type(1) {
+                background-image: url("../images/banner3.jpeg");
+            }
+            &:nth-of-type(2) {
+                background-image: url("../images/banner4.webp");
+            }
+            &:nth-of-type(3) {
+                background-image: url("../images/banner5.webp");
+            }
+            &::before {
+                content: "";
+                @extend %overlay;
+                background-color: rgba($color: #000, $alpha: 0.3);
+            }
+        }
+    }
+}
+// End Banners

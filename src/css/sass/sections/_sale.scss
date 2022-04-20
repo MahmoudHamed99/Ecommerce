@@ -1,0 +1,35 @@
+// Start Sale
+.sale {
+    position: relative;
+    @extend %sec-padd;
+    background-image: url("../images/sale.webp");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    &::before {
+        content: "";
+        @extend %overlay;
+        background-color: rgba($color: #000, $alpha: 0.7);
+    }
+    .container {
+        position: relative;
+        z-index: 4;
+        span.repair {
+            display: block;
+            color: $light;
+            font-weight: 600;
+        }
+        p {
+            margin: 20px 0;
+            font: {
+                size: 30px;
+                weight: bold;
+            }
+            color: $light;
+            span {
+                color: #df3030;
+            }
+        }    
+    }
+}
+// End Sale

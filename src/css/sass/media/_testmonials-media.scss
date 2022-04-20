@@ -1,0 +1,21 @@
+// Start Testmonials-Media
+@include media("tablet") {
+    .testmo {
+        .testmo-cont {
+            flex-direction: column;
+            padding: 50px 30px;
+            .form {
+                width: 100%;
+            }
+            .testmo-details {
+                width: 100%;
+                .testmo-box {
+                    margin: 50px 0 0;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
+// End Testmonials-Media

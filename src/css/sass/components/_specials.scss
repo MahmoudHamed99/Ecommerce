@@ -1,0 +1,89 @@
+// Start Container
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 767px) {
+    
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+// End Container
+
+// Start Section-Header
+.section-head {
+    margin: 0 auto 50px;
+    text-align: center;
+    h2 {
+        margin: 0 0 15px;
+        color: $h-color;
+        font-size: 40px;
+        @include media(mobile) {
+            font-size: 35px;
+        }
+    }
+    p {
+        margin: 0;
+        color: $p-color;
+        @include media(mobile) {
+            font-size: 14px;
+        }
+    }
+}
+// End Section-Header
+
+// Start Main-Button
+.main-butt {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: $light;
+    color: black;
+    font: {
+        size: 14px;
+        weight: 600;
+    }
+    border-radius: 3px;
+    transition: $main-trans;
+    &:hover {
+        background-color: $main-color;
+        color: $light;
+    }
+}
+// End Main-Button
+
+// Start Paginations
+.paginations {
+    ul {
+        margin: 70px 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        li {
+            width: 40px;
+            height: 40px;
+            background-color: $main-color;
+            color: $light;
+            @extend %center;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+}
+// End Paginations

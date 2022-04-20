@@ -1,0 +1,94 @@
+// Start Navbar
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba($color: #000, $alpha: 0.06);
+    z-index: 999;
+    .nav-cont {
+        @extend %distr;
+        .logo {
+            h2 {
+                margin: 0;
+                font: {
+                    size: 30px;
+                    weight: bold;
+                }
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            cursor: pointer;
+        }
+        .nav-icons {
+            i.bars,
+            i.cart {
+                display: none;
+                font-size: 26px;
+            }
+        }
+        .links {
+            display: flex;
+            li {
+                margin-left: 40px;
+                i.close {
+                    position: absolute;
+                    display: none;
+                    right: 30px;
+                    top: 30px;
+                    color: $light;
+                    cursor: pointer;
+                    transition: $main-trans;
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+                a {
+                    display: block;
+                    position: relative;
+                    padding: 10px 0;
+                    color: #1A1A1A;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: $main-trans;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 1px;
+                        bottom: 2px;
+                        width: 0;
+                        height: 3px;
+                        background-color: $main-color;
+                        transition: $main-trans;
+                    }
+                    &:hover,
+                    &.active {
+                        color: $main-color;
+                        &::after {
+                            width: 40%;
+                        }
+                    }
+                }
+                &:last-of-type {
+                    a {
+                        &:hover,
+                        &.active {
+                            &::after {
+                                width: 100%;
+                            }
+                        }    
+                    }
+                }
+                i.cart {
+                    &::after {
+                        left: 0;
+                        bottom: -2px;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Navbar

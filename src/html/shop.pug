@@ -1,0 +1,40 @@
+include pug/components/_mixins
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Ecommerce
+        include pug/components/_styles
+    body
+        //- Start Navbar
+        nav
+            .container
+                .nav-cont
+                    .logo
+                        h2 Cara
+                    .nav-icons
+                        i(class="fas fa-shopping-bag cart")
+                        i(class="fas fa-outdent bars")
+                    ul.links
+                        li
+                            i(class="fas fa-times fa-2x close")
+                        li
+                            a(href="index.html") Home
+                        li
+                            a(href="about.html") About
+                        li
+                            a(href="blog.html") Blog
+                        li
+                            a.active(href="shop.html") Shop
+                        li
+                            a(href="contact.html") Contact
+                        li
+                            a(href="cart.html"): i(class="fas fa-shopping-bag fa-lg cart")
+        //- End Navbar
+        +page-head("Stay Home", "Save More With Coupons &amp; Up To 70% Off!", "shop-head")
+        include pug/sections/_wears
+        include pug/sections/_sletter
+        include pug/sections/_footer
+        include pug/components/_scripts

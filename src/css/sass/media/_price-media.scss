@@ -1,0 +1,17 @@
+// Start Price Media
+@include media("tablet") {
+    .price {
+        .price-cont {
+            flex-direction: column;
+            gap: 50px;
+            .coupon {
+                width: 100%;
+                text-align: center;
+            }
+            .cart-total {
+                width: 100%;
+            }
+        }
+    }
+}
+// End Price Media

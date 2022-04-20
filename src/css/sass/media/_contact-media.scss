@@ -1,0 +1,31 @@
+// Start Contact-Media
+@include media("tablet") {
+    .contact {
+        .contact-cont {
+            flex-direction: column;
+            .contact-info {
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            .map {
+                width: 100%;
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@include media("medium") {
+    .contact {
+        .contact-cont {
+            .map {
+                width: 42%;
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+// End Contact-Media

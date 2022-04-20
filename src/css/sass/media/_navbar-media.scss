@@ -1,0 +1,53 @@
+// Start Navbar-Media
+@include media("tablet") {
+    nav {
+        .nav-cont {
+            position: relative;
+            .logo {
+                img {
+                    width: 100px;
+                    height: 70px;
+                }
+            }
+            .nav-icons {
+                display: flex;
+                gap: 15px;
+                i.bars,
+                i.cart {
+                    display: inline-block;
+                    cursor: pointer;
+                }    
+            }
+            .links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 250px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba($color: #000000, $alpha: 0.9);
+                transition: $main-trans;
+                &.active {
+                    right: 0;
+                }
+                li {
+                    margin-left: 0;
+                    margin-bottom: 30px;
+                    i.close {
+                        display: block;
+                    }
+                    a {
+                        padding: 10px 0;
+                        color: $light;
+                    }
+                    &:last-of-type {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Navbar-Media

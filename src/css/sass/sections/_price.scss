@@ -1,0 +1,64 @@
+// Start Price
+.price {
+    @extend %sec-padd;
+    .price-cont {
+        display: flex;
+        justify-content: space-between;
+        .coupon {
+            width: 50%;
+            h3 {
+                margin: 0 0 20px;
+                color: $h-color;
+                font-size: 20px;
+            }
+            input {
+                margin-right: 5px;
+                padding: 10px;
+                border: 1px solid #CCC;
+                border-radius: 3px;
+            }
+            button {
+                display: inline-block;
+                width: fit-content;
+                padding: 11px 15px;
+                background-color: $main-color;
+                color: $light;
+                font-weight: 600;
+                border-radius: 3px;
+            }
+        }
+        .cart-total {
+            width: 50%;
+            padding: 35px 30px;
+            border: 1px solid #CCC;
+            border-radius: 4px;
+            h3 {
+                margin: 0;
+                color: $h-color;
+                font-size: 20px;
+            }
+            table {
+                width: 100%;
+                margin: 20px 0;
+                border-collapse: collapse;
+                border-radius: 4px;
+                tr {
+                    td {
+                        padding: 10px;
+                        border: 1px solid #CCC;
+                    }
+                }
+            }
+            button {
+                display: inline-block;
+                width: fit-content;
+                padding: 11px 15px;
+                background-color: $main-color;
+                color: $light;
+                font-weight: 600;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+// End Price

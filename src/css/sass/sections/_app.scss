@@ -1,0 +1,25 @@
+// Start App
+.app {
+    @extend %sec-padd;
+    .app-cont {
+        text-align: center;
+        h2 {
+            margin: 0 0 40px;
+            font-size: 50px;
+            color: $h-color;
+            span {
+                color: $main-color;
+            }
+            @include media("small") {
+                font-size: 40px;
+            }
+            @include media("mobile") {
+                font-size: 35px;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+// End App

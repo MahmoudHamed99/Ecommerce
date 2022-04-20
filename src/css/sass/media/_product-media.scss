@@ -1,0 +1,12 @@
+// Start Product-Media
+@include media("tablet") {
+    .product-details {
+        .details-cont {
+            flex-direction: column;
+            .product-img {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+// End Product-Media
